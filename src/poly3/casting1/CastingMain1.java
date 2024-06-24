@@ -5,6 +5,10 @@ public class CastingMain1 {
         Parent parent = new Child();
         Child child = new Child();
 
+        int a = (int) 1118.1118;
+
+        System.out.println(a);
+
         child.childMethod();
         child.parentMethod();
 
