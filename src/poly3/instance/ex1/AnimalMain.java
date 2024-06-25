@@ -8,6 +8,6 @@ public class AnimalMain {
     }
     
     public static void animalCall(Animal animal) {
-        // 코드를 완성해 주세요
+        //
     }
 }
