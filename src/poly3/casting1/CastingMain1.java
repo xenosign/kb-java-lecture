@@ -4,6 +4,7 @@ public class CastingMain1 {
     public static void main(String[] args) {
         Parent parent = new Child();
         Child child = new Child();
+        child.childMethod();
 
         int a = (int) 1118.1118;
 
