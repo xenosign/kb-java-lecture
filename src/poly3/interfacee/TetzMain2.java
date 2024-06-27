@@ -1,13 +1,16 @@
 package poly3.interfacee;
 
-public class TetzMain {
+public class TetzMain2 {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        Tetz tetz = new Tetz();
+        Animal[] animals = {new Dog(), new Tetz()};
 
-        animalDo(dog);
-        animalDo(tetz);
-        humanDo(tetz);
+        for (int i = 0; i < animals.length; i++) {
+            animalDo(animals[i]);
+
+            if (animals[i] instanceof Human) {
+                humanDo((Human) animals[i]);
+            }
+        }
     }
     
     public static void animalDo(Animal animal) {
