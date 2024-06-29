@@ -27,11 +27,12 @@ public class K5Car extends AbstractCar implements Car {
         // 주행 거리를 구하는 로직
         int distance = 0;
         while (this.oil >= EFFICIENCY) {
+            // 연비당 1km 씩 증가
             super.oil -= EFFICIENCY;
             distance++;
             System.out.println(this.name + " 가 " + distance + "km 를 주행했습니다.");
         }
-
+        
         // 최종 결과 출력
         System.out.println(this.name + " 가 최종 주행한 거리는 " + distance + "km 입니다");
         System.out.println(this.name + " 주행 종료");
