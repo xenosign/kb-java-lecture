@@ -11,8 +11,6 @@ public class WrapperClassMain {
         Long long1 = Long.valueOf(100);
         Double double1 = Double.valueOf(11.18);
 
-
-
         int intValue = integer1.intValue();
         long longValue = long1.longValue();
         double doubleValue = double1.doubleValue();
