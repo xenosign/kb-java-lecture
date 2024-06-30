@@ -2,12 +2,12 @@ package lang.object;
 
 public class ObjectMain {
     public static void main(String[] args) {
-        Child child = new Child();
+        Object[] objects = { new Parent(), new Child(), new OtherClass() };
 
-        child.childMethod();
-        child.parentMethod();
+        System.out.println(size(objects));
+    }
 
-        String str = child.toString();
-        System.out.println(str);
+    public static int size(Object[] objects) {
+        return objects.length;
     }
 }
