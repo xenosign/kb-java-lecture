@@ -1,17 +1,21 @@
 package nested.inner;
 
 public class Outer {
-    private static String outerPrivateStaticValue = "outerPrivateStaticValue";
-    private String outerStaticValue = "outerStaticValue";
+    private static String outerStatic = "outerStatic";
+    private String outerInstance = "outerInstance";
 
     class Inner {
-        private String innerInstanceValue = "innerInstanceValue";
+        private static String innerStatic = "innerStatic";
+        private String innerInstance = "innerInstance";
 
         public void print() {
-            System.out.println("innerInstanceValue = " + innerInstanceValue);
-            System.out.println("outerPrivateStaticValue = " + outerPrivateStaticValue);
-            System.out.println("outerStaticValue = " + outerStaticValue);
-        }
+            // 클래스 내부의 static 값에 접근
+            System.out.println("innerStatic = " + innerStatic);
+            System.out.println("outerStatic = " + outerStatic);
 
+            // 클래스 내부의 non-static 값에 접근
+            System.out.println("innerInstance = " + innerInstance);
+            System.out.println("outerInstance = " + outerInstance);
+        }
     }
 }
