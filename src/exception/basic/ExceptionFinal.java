@@ -2,8 +2,10 @@ package exception.basic;
 
 public class ExceptionFinal {
     public static void main(String[] args) {
-        try {
-            int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println(arr[5]); // try 문 밖에서 에러 발생
+
+        try {            
             accessArr(arr, 5);
             Object object = null;
             accessNull(object);
