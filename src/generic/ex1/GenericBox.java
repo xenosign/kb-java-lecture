@@ -1,13 +1,13 @@
 package generic.ex1;
 
-public class GenericBox<Integer> {
-    private Integer value;
+public class GenericBox<T> {
+    private T value;
 
-    public Integer getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(Integer value) {
+    public void setValue(T value) {
         this.value = value;
     }
 }
