@@ -1,6 +1,6 @@
 package generic.limit;
 
-public class GenericWorld<T> {
+public class GenericWorld<T extends Number> {
     private T number;
 
     public T getNumber() {

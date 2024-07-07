@@ -2,7 +2,7 @@ package generic.ex1;
 
 public class BoxMain3 {
     public static void main(String[] args) {
-        GenericBox<Integer> integerGenericBox = new GenericBox<Integer>();
+        GenericBox<Integer> integerGenericBox = new GenericBox<>();
         integerGenericBox.setValue(100);
         Integer integer = integerGenericBox.getValue();
         System.out.println("integer = " + integer);
