@@ -7,19 +7,18 @@ public class ArrayListExample {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
 
-        list.add(10);
-        list.add(3);
+        list.add(1);
         list.add(2);
-        list.add(8);
-        list.add(22);
-        list.add(76);
-        list.add(54);
+        list.add(3);
+        list.add(4);
+        list.add(5);
 
         System.out.println("list = " + list);
-        System.out.println("size = " + list.size());
 
-        System.out.println(list.get(4));
-
+        // 여기서 마지막에 6을 추가하려면!?
+        list.add(6);
+        System.out.println("list = " + list);
+                
     }
 }
 
