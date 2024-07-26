@@ -15,7 +15,7 @@ public class ClazzMain {
             System.out.println("field = " + field);
         }
 
-        // 모든 메서드 출력
+        // 메서드 오버라이딩
         Method[] methods = clazz1.getDeclaredMethods();
         for (Method method : methods) {
             System.out.println("method = " + method);
