@@ -27,6 +27,20 @@ public class BankAccount {
         }
     }
 
+    public void withdrawEarlyReturn(int amount) {
+        if (!isAmountValid(amount)) {
+            System.out.println("유효하지 않은 금액 입니다.");
+            return;
+        }
+        if (!isPossibleWithdraw(amount)) {
+            System.out.println("잔고가 부족합니다. 현재 잔고 : " + balance);
+            return;
+        }
+
+        this.balance -= amount;
+        System.out.println("현재 잔고 : " + this.balance);
+    }
+
     public int getBalance() { return this.balance; }
 
     private boolean isAmountValid(int amount) {
