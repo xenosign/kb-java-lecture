@@ -7,14 +7,16 @@ public class Speaker {
     void powerOn() {
         if (power) {
             System.out.println("이미 전원이 켜져 있습니다");
-            return; 
+            return;
         }
 
         this.power = true;
         System.out.println("전원을 켭니다");
     }
+
     void powerOff() {
-        if (!checkPower()) {
+        if (!power) {
+            System.out.println("전원을 먼저 켜야 합니다");
             return;
         }
         
@@ -37,8 +39,7 @@ public class Speaker {
     }
 
     void volumeDown() {
-        if (!power) {
-            System.out.println("전원을 먼저 켜주세요");
+        if (!checkPower()) {
             return;
         }
         
