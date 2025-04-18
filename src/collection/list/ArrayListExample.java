@@ -15,7 +15,6 @@ public class ArrayListExample {
 
         System.out.println("list = " + list);
 
-        // 여기서 마지막에 6을 추가하려면!?
         list.add(6);
         System.out.println("list = " + list);
                 
