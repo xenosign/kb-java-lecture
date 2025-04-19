@@ -14,9 +14,6 @@ public class ArrayListExample {
         list.add(5);
 
         System.out.println("list = " + list);
-
-        list.add(6);
-        System.out.println("list = " + list);
                 
     }
 }
