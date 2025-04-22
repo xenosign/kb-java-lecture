@@ -2,13 +2,13 @@ package polyfinal.car;
 
 import java.util.Scanner;
 
-public class K5Car implements Car {
-    int efficiency = 1;
+public class GrandeurCar implements Car{
+    int efficiency = 2;
     int fuel;
 
     @Override
     public void openDoor() {
-        System.out.println("K5 차 문을 엽니다");
+        System.out.println("그랜져 차 문을 엽니다");
     }
 
     @Override
@@ -23,9 +23,9 @@ public class K5Car implements Car {
         fillFuel();
         openDoor();
 
-        System.out.println("K5가 주행을 시작 합니다");
+        System.out.println("그랜져가 주행을 시작 합니다");
         int distance = fuel / efficiency;
-        System.out.println("K5는 총 " + distance + "km 만큼 달렸습니다");
-        System.out.println("K5 주행 종료");
+        System.out.println("그랜져는 총 " + distance + "km 만큼 달렸습니다");
+        System.out.println("그랜져 주행 종료");
     }
 }
