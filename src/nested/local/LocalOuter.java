@@ -1,4 +1,4 @@
-package nested3.local;
+package nested.local;
 
 public class LocalOuter {
     private String outerInstance = "outerInstance";
@@ -24,7 +24,5 @@ public class LocalOuter {
     public static void main(String[] args) {
         LocalOuter localOuter = new LocalOuter();
         localOuter.outerMethod("parameter");
-
-
     }
 }

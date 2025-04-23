@@ -1,30 +1,28 @@
-package nested3.local;
+package nested.anonymous;
 
-public class LocalOuter {
+public class AnonymousOuter2 {
     private String outerInstance = "outerInstance";
 
     public void outerMethod(String methodParameter) {
         String methodString = "methodString"; // 지역 변수
 
-        class LocalInner {
+        Print print = new Print() {
             String localInstance = "localInstance";
 
+            @Override
             public void printLocal() {
                 System.out.println("outerInstance = " + outerInstance);
                 System.out.println("methodString = " + methodString);
                 System.out.println("localInstance = " + localInstance);
                 System.out.println("parameter = " + methodParameter);
             }
-        }
+        };
 
-        LocalInner localInner = new LocalInner();
-        localInner.printLocal();
+        print.printLocal();
     }
 
     public static void main(String[] args) {
-        LocalOuter localOuter = new LocalOuter();
+        AnonymousOuter2 localOuter = new AnonymousOuter2();
         localOuter.outerMethod("parameter");
-
-
     }
 }
