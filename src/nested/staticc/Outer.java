@@ -1,4 +1,4 @@
-package nested;
+package nested.staticc;
 
 public class Outer {
     private static String outerStatic = "outerStatic";
