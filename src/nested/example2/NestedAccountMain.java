@@ -7,5 +7,8 @@ public class NestedAccountMain {
 
         Account.StaticAccountStatus.showStatus();
         account2.showInnerStatus();
+
+        Account.InnerAccountStatus inner = account2.new InnerAccountStatus();
+        inner.showStatus();
     }
 }

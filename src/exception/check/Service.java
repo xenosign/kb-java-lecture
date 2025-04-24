@@ -6,7 +6,8 @@ public class Service {
 
         try {
             client.callException();
-        } catch (MyCheckException e) {
+            client.checkRandException();
+        } catch (MyCheckException | MyCheckException2 e) {
             e.getMessage();
             e.printStackTrace(System.out);
         }

@@ -47,10 +47,10 @@ public class Account {
         status.showStatus();
     }
 
-    private class InnerAccountStatus {
+    public class InnerAccountStatus {
         static private String lastOpener;
 
-        private void showStatus() {
+        public void showStatus() {
             System.out.println("현재 해당 상품은 총 " + count + " 만큼 개설 되었습니다");
             System.out.println("해당 상품을 마지막으로 개설한 사람은 " + lastOpener + " 입니다");
             System.out.println("해당 계좌의 소유쥬는 " + owner + " 이고, 잔고는 " + balance + " 입니다.");
