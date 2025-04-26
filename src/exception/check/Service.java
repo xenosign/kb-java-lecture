@@ -13,6 +13,8 @@ public class Service {
         } catch (MyCheckException2 e) {
             e.getMessage();
             e.printStackTrace(System.out);
+        } finally {
+            System.out.printf("반드시 실행할 코드");
         }
 
         System.out.println("막았는가!?");
