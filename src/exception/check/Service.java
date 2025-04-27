@@ -17,6 +17,7 @@ public class Service {
             System.out.printf("반드시 실행할 코드");
         }
 
+        // 실행 여부 확인
         System.out.println("막았는가!?");
     }
 }
