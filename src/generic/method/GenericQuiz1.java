@@ -5,5 +5,5 @@ public class GenericQuiz1<T> {
     public T quizMethod1(T t) { return t; }
     
     // 2번 메서드
-//    public static T quizMethod2(T t) { return t; };
+    // public static T quizMethod2(T t) { return t; };
 }

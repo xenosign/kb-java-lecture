@@ -9,6 +9,6 @@ public class Ex1Main {
         Parent parent = new Parent();
         Child poly = (Child) parent;
         poly.childMethod();
-        System.out.println("예외 처리 완료!");
+        System.out.println("예외 처리 내용 출력!");
     }
 }

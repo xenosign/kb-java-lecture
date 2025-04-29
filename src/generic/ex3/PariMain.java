@@ -3,7 +3,7 @@ package generic.ex3;
 public class PariMain {
     public static void main(String[] args) {
         Pair<String, String> nameData = new Pair<>("name", "이효석");
-        Pair<String, Integer> ageData = new Pair<>("age", 40);
+        Pair<String, Integer> ageData = new Pair<>("age", 41);
         Pair<String, Boolean> marriedData = new Pair<>("married", false);
         // 이거 인텔리제이 자동 추천으로 완성한건데 왜 바로 false 넣는거죠? -_-+;;;;;;;;
 
