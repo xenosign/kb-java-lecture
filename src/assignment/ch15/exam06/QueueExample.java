@@ -28,7 +28,6 @@ public class QueueExample {
                     break;
             }
 
-            // 향상된 switch 문 (Java 12+)
             switch (message.command) {
                 case "sendMail" -> System.out.println(message.to + "님에게 메일을 보냅니다.");
                 case "sendSMS" -> System.out.println(message.to + "님에게 SMS를 보냅니다.");
