@@ -1,8 +1,6 @@
-package assignment.ch15.exam01;
+package assignment.ch15.exam02;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 //@Data
 //@NoArgsConstructor
