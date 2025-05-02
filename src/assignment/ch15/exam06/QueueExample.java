@@ -16,11 +16,11 @@ public class QueueExample {
         while(!messageQueue.isEmpty()){
             Message message = messageQueue.poll();
 
-            switch (message.command) {
-                case "sendMail" -> System.out.println(message.to + "님에게 메일을 보냅니다.");
-                case "sendSMS" -> System.out.println(message.to + "님에게 SMS를 보냅니다.");
-                case "sendKakaotalk" -> System.out.println(message.to + "님에게 카카오톡을 보냅니다.");
-            }
+//            switch (message.command) {
+//                case "sendMail" -> System.out.println(message.to + "님에게 메일을 보냅니다.");
+//                case "sendSMS" -> System.out.println(message.to + "님에게 SMS를 보냅니다.");
+//                case "sendKakaotalk" -> System.out.println(message.to + "님에게 카카오톡을 보냅니다.");
+//            }
         }
     }
 }
